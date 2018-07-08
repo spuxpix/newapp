@@ -43,11 +43,11 @@ $colors: (
   mypink2: #fa3d75,
 );
 
-$tabs-background:color($colors,mypink);
+$tabs-background:color($colors,mypink2);
 $tabs-tab-color-inactive:color($colors,light);
-$tabs-tab-color-active:color($colors,danger);
+$tabs-tab-color-active:color($colors,light);
 
-$toolbar-background:color($colors,mypink);
+$toolbar-background:color($colors,mypink2);
 
 // App iOS Variables
 // --------------------------------------------------
@@ -59,8 +59,8 @@ $toolbar-background:color($colors,mypink);
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-$tabs-md-tab-text-color:color($colors,mypink2);
-$tabs-md-tab-icon-color:color($colors,mypink2);
+$tabs-md-tab-text-color:color($colors,light);
+$tabs-md-tab-icon-color:color($colors,light);
 
 // App Windows Variables
 // --------------------------------------------------

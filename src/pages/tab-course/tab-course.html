@@ -16,6 +16,17 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item *ngFor="let cdata of responseData" (click)="courseDetail(cdata.id)">
+      <ion-thumbnail>
+        <img src="{{imgPath}}images/{{cdata.images}}">
+      </ion-thumbnail>
+      <h2>{{cdata.name}}</h2>
+      <p>{{cdata.description}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>
